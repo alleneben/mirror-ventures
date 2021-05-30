@@ -1,0 +1,10 @@
+@import "../../asset/mixins/_mixins";
+@import '../../asset/scss/variables.scss';
+.signin {
+    @include flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1 {
+    color: $blue-300;
+}
