@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 
 // import { api } from '../../store';
 
@@ -7,10 +6,10 @@ import React, { useState } from 'react';
 
 const Field = (props) => {
     
-    const [combo, setcombo] = useState([])
+    // const [combo, setcombo] = useState([])
     const { styles, label, fieldtype } = props;
 
-    const onmousedown = (e) => {
+    // const onmousedown = (e) => {
         // if(typeof cb === 'object') {
         //     let c = cb.map((rd,key) => <option key={key} value={rd.rid}>{rd.nam}</option>)
         //     setcombo(c)
@@ -28,7 +27,7 @@ const Field = (props) => {
         //         setcombo(c)
         //     })
         // }
-    }
+    // }
 
     return(
         <div className={styles.formitem}>
@@ -44,7 +43,7 @@ const Field = (props) => {
                     <>
                     <select {...props}>
                         <option value="">Choose</option>
-                        { combo }
+                        { [] }
                     </select>
                     <div className="combo">
                         <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>

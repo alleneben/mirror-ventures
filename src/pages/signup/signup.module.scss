@@ -8,3 +8,15 @@
 h1 {
     color: $blue-300;
 }
+p {
+    font-weight: 200;
+    text-align: center;
+    color: $bg-gray-700;
+    margin-top: 10px;
+
+    span {
+        color: $blue-300;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}

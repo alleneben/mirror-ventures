@@ -50,7 +50,7 @@
     // text-transform: uppercase;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
-    margin: 5px;
+    // margin: 5px;
     background: $blue-300;
     border: none;
     border-radius: 3px;
@@ -60,7 +60,23 @@
     width: 400px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-.button:focus {
+.buttonClear {
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+    background: $pure-white;
+    border: 1px solid $blue-300;
+    border-radius: 3px;
+    color: #000;
+    padding: 1rem;
+    cursor: pointer;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:focus,.buttonClear {
     outline: none;
 }
 .button:hover {

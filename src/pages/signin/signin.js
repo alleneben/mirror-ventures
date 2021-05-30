@@ -1,10 +1,19 @@
-
+import { useHistory } from 'react-router-dom';
 import { Field, Button } from '../../components';
 import styles from '../../asset/scss/forms.module.scss';
 import customStyles from './signin.module.scss';
 
 const SignIn = () => {
+    let history = useHistory()
 
+
+    const goToSignUp = () => {
+        history.push('/signup')
+    }
+
+    const onChange = () => {
+        
+    }
 
     return(
         <div className={customStyles.signin}>
@@ -16,7 +25,7 @@ const SignIn = () => {
                     type={'text'} 
                     placeholder={'Enter your email'} 
                     fieldtype={'tt'} 
-                    onchange={onchange} 
+                    onChange={onChange} 
                     // value={value} 
                     required={true} 
                     styles={styles} 
@@ -26,11 +35,11 @@ const SignIn = () => {
                 />
                 <Field 
                     label={'Password'} 
-                    id={'email'} 
+                    id={'password'} 
                     type={'password'} 
                     placeholder={'**********'} 
                     fieldtype={'tt'} 
-                    onchange={onchange} 
+                    onChange={onChange} 
                     // value={value} 
                     required={true} 
                     styles={styles} 
@@ -39,6 +48,9 @@ const SignIn = () => {
                     disabled={false}
                 />
                 <Button styles={styles.button} btntext={'Log In'} />
+                <br/>
+                <br/>
+                <p style={{ cursor: 'pointer'}} onClick={goToSignUp}>Got SignUp (For testing)</p>
             </form>
         </div>
     )

@@ -1,13 +1,21 @@
-
-
+import { useHistory } from 'react-router-dom'
 import { Field, Button } from '../../components';
 import styles from '../../asset/scss/forms.module.scss';
 import customStyles from './signup.module.scss';
-
+import { ReactComponent as GoogleIcon } from '../../asset/icons/search.svg'; 
 
 
 const SignUp = () => {
+    let history = useHistory()
 
+
+    const goToSignIn = () => {
+        history.push('/')
+    }
+    
+    const onChange = () => {
+
+    }
 
     return(
         <div className={customStyles.signin}>
@@ -19,7 +27,7 @@ const SignUp = () => {
                     type={'text'} 
                     placeholder={'Enter your email'} 
                     fieldtype={'tt'} 
-                    onchange={onchange} 
+                    onChange={onChange} 
                     // value={value} 
                     required={true} 
                     styles={styles} 
@@ -33,7 +41,7 @@ const SignUp = () => {
                     type={'password'} 
                     placeholder={'**********'} 
                     fieldtype={'tt'} 
-                    onchange={onchange} 
+                    onChange={onChange} 
                     // value={value} 
                     required={true} 
                     styles={styles} 
@@ -47,7 +55,7 @@ const SignUp = () => {
                     type={'repeatpassword'} 
                     placeholder={'**********'} 
                     fieldtype={'tt'} 
-                    onchange={onchange} 
+                    onChange={onChange} 
                     // value={value} 
                     required={true} 
                     styles={styles} 
@@ -56,6 +64,9 @@ const SignUp = () => {
                     disabled={false}
                 />
                 <Button styles={styles.button} btntext={'Sign Up'} />
+                <br/>
+                <Button styles={styles.buttonClear} btntext={'Signup with Google'} icon={<GoogleIcon/>}/>
+                <p>Already have an account? <span onClick={goToSignIn}>LOG IN</span></p>
             </form>
         </div>
     )
