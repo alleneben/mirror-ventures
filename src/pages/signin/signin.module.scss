@@ -1,10 +1,28 @@
 @import "../../asset/mixins/_mixins";
 @import '../../asset/scss/variables.scss';
+
 .signin {
     @include flex;
     flex-direction: column;
     height: 100vh;
+    padding: 10px 50px;
+
+    form {
+        width: 100%;
+    }
 }
 h1 {
     color: $blue-300;
+}
+p {
+    font-weight: 200;
+    text-align: center;
+    color: $bg-gray-700;
+    margin-top: 10px;
+
+    span {
+        color: $blue-300;
+        font-weight: 700;
+        cursor: pointer;
+    }
 }

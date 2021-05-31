@@ -2,6 +2,8 @@ import { useHistory } from 'react-router-dom';
 import { Field, Button } from '../../components';
 import styles from '../../asset/scss/forms.module.scss';
 import customStyles from './signin.module.scss';
+import { ReactComponent as GoogleIcon } from '../../asset/icons/search.svg'; 
+
 
 const SignIn = () => {
     let history = useHistory()
@@ -49,7 +51,7 @@ const SignIn = () => {
                 />
                 <Button styles={styles.button} btntext={'Log In'} />
                 <br/>
-                <br/>
+                <Button styles={styles.buttonClear} btntext={'Signin with Google'} icon={<GoogleIcon/>}/>
                 <p style={{ cursor: 'pointer'}} onClick={goToSignUp}>Got SignUp (For testing)</p>
             </form>
         </div>
