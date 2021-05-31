@@ -4,6 +4,11 @@
     @include flex;
     flex-direction: column;
     height: 100vh;
+    padding: 10px 50px;
+
+    form {
+        width: 100%;
+    }
 }
 h1 {
     color: $blue-300;
