@@ -10,13 +10,13 @@
     }
     input,select,textarea {        
         box-sizing: border-box;
-        padding: 25px;
+        padding: 15px;
         border-radius: 3px;
         border: none;
         background: $bg-gray-fields;
         color: $gray-600;
-        margin: 5px 0 30px 0;
-        width: 400px;
+        margin: 5px 0 20px 0;
+        width: 100%;
     }
 
     input:focus, select:focus, textarea:focus {
@@ -57,7 +57,7 @@
     color: #ffffff;
     padding: 1rem;
     cursor: pointer;
-    width: 400px;
+    width: 100%;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .buttonClear {
@@ -69,9 +69,9 @@
     border: 1px solid $blue-300;
     border-radius: 3px;
     color: #000;
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
-    width: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,13 +82,4 @@
 .button:hover {
     // background-color: $active-link;
     transition: all 1s;
-}
-
-@media only screen and (max-width: 600px){
-    input, select,textarea {
-        width: 250px !important;
-    }
-    label {
-        font-weight: 200;
-    }
 }
