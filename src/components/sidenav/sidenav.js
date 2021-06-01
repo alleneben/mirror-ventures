@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes, faEnvelope,faQrcode } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faEnvelope,faQrcode } from "@fortawesome/free-solid-svg-icons";
 
 import { ReactComponent as Logo } from '../../asset/img/logo.svg';
 import SideNavItem from './sidenavitem';
