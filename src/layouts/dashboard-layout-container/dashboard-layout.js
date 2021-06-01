@@ -10,12 +10,12 @@ import styles from './dashboard-layout.module.scss';
 
 
 const DashboardLayout = (props) => {
-
+    // const [title,setTitle] = useState('Welcome Jones')
     return(
         <div className={styles.container}>
             <SideNav />
             <nav className={styles.nav}>
-                <h1>Welcome Jones</h1>
+                <h1>{'Welcome Jones'}</h1>
                 <div className={styles.right}>
                     <FontAwesomeIcon style={{ fontSize: "1rem", color: "#cbd5e0", marginRight: "1rem"}} icon={faSearch}/>
                     <FontAwesomeIcon style={{ fontSize: "1rem", color: "#cbd5e0", marginRight: "1rem"}} icon={faBell}/>

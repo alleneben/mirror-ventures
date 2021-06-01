@@ -1,0 +1,14 @@
+@import "../../asset/mixins/_mixins";
+@import '../../asset/scss/variables.scss';
+
+.donate {
+    @include flex;
+
+
+    #donation {
+        flex: 0.25;
+    }
+    #payment {
+        flex: 0.75;
+    }
+}
