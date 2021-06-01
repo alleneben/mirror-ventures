@@ -23,7 +23,7 @@ const SignIn = () => {
 
     return(
         <div className={customStyles.signin}>
-            <h1>Sign In</h1>
+            <div className="logo"></div>
             <form> 
                 <Field 
                     label={'Email'} 

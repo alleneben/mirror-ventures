@@ -26,3 +26,16 @@ p {
         cursor: pointer;
     }
 }
+
+.logo {
+    /* mv 1 */
+
+position: absolute;
+width: 462px;
+height: 137.57px;
+// left: 489px;
+// top: 106px;
+background-color: green;
+background: url("../../asset/img/logo.svg");
+
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
-import { Dashboard } from '../pages';
+import { Dashboard, Video } from '../pages';
 
 
 const DashboardRoutes = (props) => {
@@ -11,7 +11,7 @@ const DashboardRoutes = (props) => {
       <Switch>
         {/* All the routes and their component to render goes here as shown below */}
         <Route exact path="/app/dashboard" component={Dashboard} {...props}/>
-        {/* <Route exact path="/app/new" component={NewContainer} {...props}/> */}
+        <Route exact path="/app/dashboard/video" component={Video} {...props}/>
         
         <Route
           path=""

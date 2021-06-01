@@ -1,8 +1,9 @@
 @import '../../asset/scss/variables.scss';
 .sidenav {
     position: fixed;
-    left:-250px;
-    width: 250px;
+    // left:-250px;
+    // width: 250px;
+    width: 300px;
     height: 100%;
     background: $primary;
     transition: all .5s ease;
@@ -12,8 +13,13 @@
         color: white;
         text-align: center;
         line-height: 50px;
-        background: #063146;
+        background: $primary;
         user-select: none;
+    }
+    svg {
+        // margin: 20px;
+        width: 80%;
+        // margin-left: 20px;
     }
 
     ul a {
@@ -26,7 +32,7 @@
         padding-left: 40px;
         box-sizing: border-box;
         border-top: 1px solid rgba(255,255,255,.1);
-        border-bottom: 1px solid black;
+        // border-bottom: 1px solid black;
         transition: .4s;
     }
 
@@ -70,24 +76,37 @@ label #cancel {
     transition: all .5s;
 }
 
-#check:checked ~ .sidenav {
+// #check:checked ~ .sidenav {
+//     left: 0;
+// }
+
+// #check:checked ~ label #btn {
+//     left: 250px;
+//     opacity: 0;
+//     pointer-events: none;
+// }
+// #check:checked ~ label #cancel {
+//     left: 195px;
+// }
+// #check:checked ~ main {
+//     margin-left: 250px;
+// }
+
+// #check:checked ~ nav {
+//     margin-left: 250px;
+//     padding-left: 10px;
+// }
+
+.sidenav {
     left: 0;
 }
 
-#check:checked ~ label #btn {
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-}
-#check:checked ~ label #cancel {
-    left: 195px;
-}
-#check:checked ~ main {
-    margin-left: 250px;
+main {
+    margin-left: 300px;
 }
 
-#check:checked ~ nav {
-    margin-left: 250px;
+nav {
+    margin-left: 300px;
     padding-left: 10px;
 }
 
