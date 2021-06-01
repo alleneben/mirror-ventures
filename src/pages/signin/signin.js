@@ -13,6 +13,10 @@ const SignIn = () => {
         history.push('/signup')
     }
 
+    const goToDashboard = () => {
+        history.push('/app/dashboard')
+    }
+
     const onChange = () => {
         
     }
@@ -49,7 +53,7 @@ const SignIn = () => {
                     // cb={cb} 
                     disabled={false}
                 />
-                <Button styles={styles.button} btntext={'Log In'} />
+                <Button styles={styles.button} onClick={goToDashboard} btntext={'Log In'} />
                 <br/>
                 <Button styles={styles.buttonClear} btntext={'Signin with Google'} icon={<GoogleIcon/>}/>
                 <p style={{ cursor: 'pointer'}} onClick={goToSignUp}>Got SignUp (For testing)</p>

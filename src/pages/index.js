@@ -1,6 +1,8 @@
 import SignIn from './signin/signin';
 import SignUp from './signup/signup';
 
+import { Dashboard } from './dashboard';
+
 
 
 
@@ -9,5 +11,7 @@ import SignUp from './signup/signup';
 
 export {
     SignIn,
-    SignUp
+    SignUp,
+
+    Dashboard,
 }

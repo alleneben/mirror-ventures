@@ -1,4 +1,4 @@
-import MainRouter from './main-router';
+import MainRouter from './routes/main-router';
 
 function App() {
   return (
