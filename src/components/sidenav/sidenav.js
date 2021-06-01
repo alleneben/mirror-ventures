@@ -34,6 +34,9 @@ const SideNav = () => {
             <ul>
                 <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faEnvelope}/>
                 <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
+                <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
+                <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
+
                 {/* <SideNavItem path="/" linktext="Home" icon={faHome}/> */}
                 {/* <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
                 <SideNavItem path="/app/new" linktext="Members" icon={faUsers}/>

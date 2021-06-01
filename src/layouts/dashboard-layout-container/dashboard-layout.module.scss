@@ -17,17 +17,35 @@
 
 .nav {
     line-height: 50px;
-    background: #ffffff;
+    background: #F4F5F7;
     color: $primary;
     font-weight: 800;
-    box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    // box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     top: 0;
     left: 0;
     position: sticky;
     transition: all .5s;
-    padding-left: 100px;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(0,0,0,0.7);
+    }
+
+    .vertical {
+        height: 40px;
+        width: 1px;
+        background-color: #cbd5e0;
+        margin: 0 30px;
+    }
 }
 .dropdown {
     position: relative;
