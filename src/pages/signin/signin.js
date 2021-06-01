@@ -14,7 +14,7 @@ const SignIn = () => {
     }
 
     const goToDashboard = () => {
-        history.push('/app/dashboard')
+        history.push('/app/dashboard/watch')
     }
 
     const onChange = () => {

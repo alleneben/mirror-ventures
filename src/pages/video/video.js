@@ -6,7 +6,7 @@ const Video = () => {
 
     return (
         <div>
-            Video
+            Watch Now
         </div>
     )
 }

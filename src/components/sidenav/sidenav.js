@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faEnvelope,faQrcode } from "@fortawesome/free-solid-svg-icons";
+import {  faEnvelope,faQrcode, faCog } from "@fortawesome/free-solid-svg-icons";
 
 import { ReactComponent as Logo } from '../../asset/img/logo.svg';
 import SideNavItem from './sidenavitem';
@@ -32,10 +32,12 @@ const SideNav = () => {
                 <Logo />
             </header>
             <ul>
-                <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faEnvelope}/>
-                <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
-                <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
-                <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>
+                <SideNavItem path="/app/dashboard/watch" linktext="Watch" icon={faEnvelope}/>
+                <SideNavItem path="/app/dashboard/tickets" linktext="Tickets" icon={faQrcode}/>
+                <SideNavItem path="/app/dashboard/donate" linktext="Donate" icon={faQrcode}/>
+                <SideNavItem path="/app/dashboard/settings" linktext="Settings" icon={faCog}/>
+                <SideNavItem path="/app/dashboard/about" linktext="About" icon={faQrcode}/>
+                <SideNavItem path="/app/dashboard/contact" linktext="Contact" icon={faQrcode}/>
 
                 {/* <SideNavItem path="/" linktext="Home" icon={faHome}/> */}
                 {/* <SideNavItem path="/app/dashboard" linktext="Dashboard" icon={faQrcode}/>

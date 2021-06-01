@@ -3,7 +3,8 @@ import SignUp from './signup/signup';
 
 import { Dashboard } from './dashboard';
 import { Video } from './video';
-
+import { Donate } from './donate';
+import { Tickets } from './tickets';
 
 
 
@@ -15,5 +16,7 @@ export {
     SignUp,
 
     Dashboard,
-    Video
+    Video,
+    Donate,
+    Tickets
 }
