@@ -6,7 +6,7 @@ class Card extends React.Component {
 
     render(){
         return(
-            <div className={this.props.className} style={{opacity: this.props.submittingstyle}} id={this.props.id}>
+            <div className={this.props.className} {...this.props}>
                 {this.props.children}
             </div>
         )

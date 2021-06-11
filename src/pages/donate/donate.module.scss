@@ -2,13 +2,21 @@
 @import '../../asset/scss/variables.scss';
 
 .donate {
-    @include flex;
+    display:  flex;
 
-
+    h5 {
+        margin-bottom: 30px;
+    }
     #donation {
-        flex: 0.25;
+        flex: 0.30;
     }
     #payment {
-        flex: 0.75;
+        flex: 0.70;
+    }
+    .bottom {
+        display: flex;
+    }
+    .icons {
+        padding-bottom: 30px;
     }
 }
