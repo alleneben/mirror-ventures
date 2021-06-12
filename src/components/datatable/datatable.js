@@ -27,7 +27,7 @@ const DataTable  = ({ config, data }) => {
         <div className={styles.container}>
             <div className={styles.wrapper}>
                 <div className={styles.tablewrapper}>
-                    { config.name }
+                    <h3>{ config.name }</h3>
                     <table className={styles.table}>
                         <thead>
                             <tr>
