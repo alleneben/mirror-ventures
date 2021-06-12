@@ -6,7 +6,7 @@ import React from 'react';
 
 
 const Button = (props) => {
-    const { btntext, styles, icon, iconSize } = props;
+    const { btntext, styles, icon } = props;
 
     return(
         <button className={styles} {...props}>
