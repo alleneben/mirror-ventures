@@ -5,10 +5,11 @@ import React from 'react';
 
 
 
-const Button = ({ btntext, styles, onClick,disable, icon, iconSize }) => {
+const Button = (props) => {
+    const { btntext, styles, icon, iconSize } = props;
 
     return(
-        <button className={styles} onClick={onClick} disabled={disable}>
+        <button className={styles} {...props}>
         {/* <FontAwesomeIcon
             style={{ fontSize: "1.1rem", marginRight: ".3rem" }}
             icon={icon} />{" "} */}
