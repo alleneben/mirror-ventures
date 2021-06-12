@@ -3,6 +3,7 @@ import { Field, Button } from '../../components';
 import styles from '../../asset/scss/forms.module.scss';
 import customStyles from './signup.module.scss';
 import { ReactComponent as GoogleIcon } from '../../asset/icons/search.svg'; 
+import { ReactComponent as Logo } from '../../asset/img/logo.svg';
 
 
 const SignUp = () => {
@@ -19,7 +20,7 @@ const SignUp = () => {
 
     return(
         <div className={customStyles.signin}>
-            <h1>Sign Up</h1>
+            <Logo />
             <form> 
                 <Field 
                     label={'Email'} 
@@ -27,12 +28,10 @@ const SignUp = () => {
                     type={'text'} 
                     placeholder={'Enter your email'} 
                     fieldtype={'tt'} 
-                    onChange={onChange} 
-                    // value={value} 
+                    onChange={onChange}
                     required={true} 
                     styles={styles} 
-                    // cstyles={cstyles} 
-                    // cb={cb} 
+                    style={{marginBottom: '20px'}}
                     disabled={false}
                 />
                 <Field 
@@ -42,11 +41,9 @@ const SignUp = () => {
                     placeholder={'**********'} 
                     fieldtype={'tt'} 
                     onChange={onChange} 
-                    // value={value} 
                     required={true} 
                     styles={styles} 
-                    // cstyles={cstyles} 
-                    // cb={cb} 
+                    style={{marginBottom: '20px'}}
                     disabled={false}
                 />
                 <Field 
@@ -55,12 +52,10 @@ const SignUp = () => {
                     type={'repeatpassword'} 
                     placeholder={'**********'} 
                     fieldtype={'tt'} 
-                    onChange={onChange} 
-                    // value={value} 
+                    onChange={onChange}  
                     required={true} 
                     styles={styles} 
-                    // cstyles={cstyles} 
-                    // cb={cb} 
+                    style={{marginBottom: '20px'}}
                     disabled={false}
                 />
                 <Button styles={styles.button} btntext={'Sign Up'} />
