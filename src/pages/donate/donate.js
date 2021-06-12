@@ -25,13 +25,10 @@ const Donate = () => {
                     type={'number'} 
                     placeholder={'Enter Amount'} 
                     fieldtype={'tt'} 
-                    onChange={onChange} 
-                    // value={value} 
+                    onChange={onChange}
                     required={true} 
                     styles={styles} 
-                    style={{width: "100%"}}
-                    // cstyles={cstyles} 
-                    // cb={cb} 
+                    style={{width: "100%", marginBottom:'20px'}}
                     disabled={false}
                     />
                 </CardBody>
@@ -56,12 +53,9 @@ const Donate = () => {
                         placeholder={'Jane Do'} 
                         fieldtype={'tt'} 
                         onChange={onChange} 
-                        // value={value} 
                         required={true} 
                         styles={styles} 
-                        style={{width: "500px"}}
-                        // cstyles={cstyles} 
-                        // cb={cb} 
+                        style={{width: "500px", marginBottom:'20px'}}
                         disabled={false}
                     />
                     <Field 
@@ -70,13 +64,10 @@ const Donate = () => {
                     type={'text'} 
                     placeholder={'4410 ---- ----- ------'} 
                     fieldtype={'tt'} 
-                    onChange={onChange} 
-                    // value={value} 
+                    onChange={onChange}
                     required={true} 
                     styles={styles} 
-                    style={{width: "500px"}}
-                    // cstyles={cstyles} 
-                    // cb={cb} 
+                    style={{width: "500px", marginBottom:'20px'}}
                     disabled={false}
                     />
                     <div className={customStyles.bottom}>
@@ -86,13 +77,10 @@ const Donate = () => {
                         type={'text'} 
                         placeholder={'6/20'} 
                         fieldtype={'tt'} 
-                        onChange={onChange} 
-                        // value={value} 
+                        onChange={onChange}
                         required={true} 
                         styles={styles} 
                         style={{width: "230px", marginRight: "20px"}}
-                        // cstyles={cstyles} 
-                        // cb={cb} 
                         disabled={false}
                         />
                         <Field 
@@ -102,12 +90,9 @@ const Donate = () => {
                         placeholder={'242'} 
                         fieldtype={'tt'} 
                         onChange={onChange} 
-                        // value={value} 
                         required={true} 
                         styles={styles} 
-                        style={{width: "250px"}}
-                        // cstyles={cstyles} 
-                        // cb={cb} 
+                        style={{width: "250px", marginBottom:'20px'}}
                         disabled={false}
                         />
                     </div>
