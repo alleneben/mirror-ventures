@@ -5,6 +5,7 @@ import { TopNav } from './topnav';
 import { SideNav } from './sidenav';
 import { Card, CardBody, CardFooter, CardHeader } from './card';
 import { DataTable } from './datatable';
+import { Video } from './video';
 
 
 export {
@@ -17,6 +18,7 @@ export {
     CardBody,
     CardFooter,
     CardHeader,
-    DataTable
+    DataTable,
+    Video
     
 }
