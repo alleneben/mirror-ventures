@@ -51,9 +51,9 @@ const SignIn = () => {
                     disabled={false}
                 />
                 <p style={{marginTop: 0,marginBottom: 30, textAlign: 'right', cursor: 'pointer', color: '#0380D6', fontWeight: 500}}>Forgotten password?</p>
-                <Button styles={styles.button} onClick={goToDashboard} btntext={'Log In'} />
+                <Button btntype="btn" onClick={goToDashboard} btntext={'Log In'} />
                 <br/>
-                <Button styles={styles.buttonClear} btntext={'Log in with Google'} icon={<GoogleIcon/>}/>
+                <Button btntype="btn-clear" btntext={'Log in with Google'} icon={<GoogleIcon/>}/>
                 <p>Don't have an account? <span onClick={goToSignUp}>CREATE ONE</span></p>
 
             </form>

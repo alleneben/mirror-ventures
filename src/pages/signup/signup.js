@@ -58,9 +58,9 @@ const SignUp = () => {
                     style={{marginBottom: '20px'}}
                     disabled={false}
                 />
-                <Button styles={styles.button} btntext={'Sign Up'} />
+                <Button btntype="btn" btntext={'Sign Up'} />
                 <br/>
-                <Button styles={styles.buttonClear} btntext={'Signup with Google'} icon={<GoogleIcon/>}/>
+                <Button btntype="btn-clear" btntext={'Signup with Google'} icon={<GoogleIcon/>}/>
                 <p>Already have an account? <span onClick={goToSignIn}>LOG IN</span></p>
             </form>
         </div>

@@ -2,9 +2,9 @@ import MainRouter from './routes/main-router';
 
 function App() {
   return (
-    <div className="App">
+    // <div className="App">
       <MainRouter />
-    </div>
+    // </div>
   );
 }
 
