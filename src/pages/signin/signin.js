@@ -50,11 +50,11 @@ const SignIn = () => {
                     styles={styles}
                     disabled={false}
                 />
-                <p style={{marginTop: 0,marginBottom: 30, textAlign: 'right', cursor: 'pointer', color: '#0380D6', fontWeight: 500}}>Forgotten password?</p>
+                <p id={customStyles.forgottenpassword}>Forgotten password?</p>
                 <Button btntype="btn" onClick={goToDashboard} btntext={'Log In'} />
                 <br/>
                 <Button btntype="btn-clear" btntext={'Log in with Google'} icon={<GoogleIcon/>}/>
-                <p>Don't have an account? <span onClick={goToSignUp}>CREATE ONE</span></p>
+                <p id={customStyles.createone}>Don't have an account? <span onClick={goToSignUp}>CREATE ONE</span></p>
 
             </form>
         </div>

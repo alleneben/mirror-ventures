@@ -1,6 +1,6 @@
 @import "../../asset/mixins/_mixins";
 @import '../../asset/scss/variables.scss';
-.signin {
+.signup {
     @include flex;
     flex-direction: column;
     height: 100vh;
@@ -14,10 +14,7 @@
         width: 80%;
     }
 }
-h1 {
-    color: $blue-300;
-}
-p {
+#login {
     font-weight: 200;
     text-align: center;
     color: $bg-gray-700;
@@ -27,5 +24,21 @@ p {
         color: $blue-300;
         font-weight: 700;
         cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .signup {
+        padding: 10px 450px;
+    
+        form {
+            width: 100%;
+        }
+        svg {
+            margin: 0;
+            width: 60%;
+        }
     }
 }

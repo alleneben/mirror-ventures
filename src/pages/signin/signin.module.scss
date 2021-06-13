@@ -8,17 +8,15 @@
     padding: 10px 50px;
 
     form {
-        width: 100%;
+        width: 50%;
     }
     svg {
         margin: 0;
         width: 80%;
     }
 }
-h1 {
-    color: $blue-300;
-}
-p {
+
+#createone {
     font-weight: 200;
     text-align: center;
     color: $bg-gray-700;
@@ -30,4 +28,27 @@ p {
         cursor: pointer;
     }
 }
+#forgottenpassword {
+    margin-top: 0;
+    margin-bottom: 30px; 
+    text-align: right;
+    cursor: pointer; 
+    color: #0380D6; 
+    font-weight: 500;
+}
 
+
+@media screen and (min-width: 769px) {
+
+    .signin {
+        padding: 10px 450px;
+    
+        form {
+            width: 100%;
+        }
+        svg {
+            margin: 0;
+            width: 60%;
+        }
+    }
+}

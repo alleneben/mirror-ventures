@@ -19,7 +19,7 @@ const SignUp = () => {
     }
 
     return(
-        <div className={customStyles.signin}>
+        <div className={customStyles.signup}>
             <Logo />
             <form> 
                 <Field 
@@ -31,7 +31,7 @@ const SignUp = () => {
                     onChange={onChange}
                     required={true} 
                     styles={styles} 
-                    style={{marginBottom: '20px'}}
+                    style={{marginBottom: '10px', height: 50}}
                     disabled={false}
                 />
                 <Field 
@@ -43,7 +43,7 @@ const SignUp = () => {
                     onChange={onChange} 
                     required={true} 
                     styles={styles} 
-                    style={{marginBottom: '20px'}}
+                    style={{marginBottom: '10px', height: 50}}
                     disabled={false}
                 />
                 <Field 
@@ -55,13 +55,13 @@ const SignUp = () => {
                     onChange={onChange}  
                     required={true} 
                     styles={styles} 
-                    style={{marginBottom: '20px'}}
+                    style={{marginBottom: '10px', height: 50}}
                     disabled={false}
                 />
                 <Button btntype="btn" btntext={'Sign Up'} />
                 <br/>
                 <Button btntype="btn-clear" btntext={'Signup with Google'} icon={<GoogleIcon/>}/>
-                <p>Already have an account? <span onClick={goToSignIn}>LOG IN</span></p>
+                <p id={customStyles.login}>Already have an account? <span onClick={goToSignIn}>LOG IN</span></p>
             </form>
         </div>
     )
