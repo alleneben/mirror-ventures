@@ -8,7 +8,7 @@
     padding: 10px 50px;
 
     form {
-        width: 50%;
+        width: 100%;
     }
     svg {
         margin: 0;
@@ -39,7 +39,6 @@
 
 
 @media screen and (min-width: 769px) {
-
     .signin {
         padding: 10px 450px;
     
@@ -51,4 +50,11 @@
             width: 60%;
         }
     }
+}
+
+@media screen and (min-width: 1025px) {
+    #forgottenpassword {
+        color: red;
+    }
+    
 }
