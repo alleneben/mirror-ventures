@@ -1,5 +1,4 @@
 import { DataTable, Button } from '../../components';
-import styles from '../../asset/scss/forms.module.scss';
 import customStyles from './tickets.module.scss';
 
 const Tickets = () => {
@@ -20,7 +19,7 @@ const Tickets = () => {
 
     return (
         <div className={customStyles.tickets}>
-            <Button styles={styles.button} btntext={'Buy Ticket'} style={{width: '150px', marginLeft:'auto', marginBottom: '20px'}}/>
+            <Button btntype="btn" btntext={'Buy Ticket'} style={{width: '150px', marginLeft:'auto', marginBottom: '20px'}}/>
             <DataTable config={initConfig} data={ data } />
         </div>
     )

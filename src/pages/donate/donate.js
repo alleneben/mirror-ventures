@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, Field } from '../../components';
+import { Card, CardHeader, CardBody, CardFooter, Field, Button } from '../../components';
 import utilstyle from '../../asset/scss/util.module.scss';
 import customStyles from './donate.module.scss';
 import styles from '../../asset/scss/forms.module.scss';
@@ -98,7 +98,7 @@ const Donate = () => {
                     </div>
                 </CardBody>
                 <CardFooter className={utilstyle.cardfooter}>
-                    <button type="submit"  className={styles.button} style={{width: "50%"}}>Pay $10</button>
+                    <Button btntype="btn" btntext={'Pay $10'} style={{width: "50%"}}/>
                 </CardFooter>   
             </Card>
         </div>

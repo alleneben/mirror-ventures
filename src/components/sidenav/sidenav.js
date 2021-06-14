@@ -1,8 +1,6 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-
 import { ReactComponent as Logo } from '../../asset/img/logo.svg';
-// import SideNavItem from './sidenavitem';
+import SideNavItem from './sidenavitem';
 // import styles from './sidenav.module.scss';
 
 
@@ -61,6 +59,13 @@ const SideNav = () => {
                 <i className='bx bx-menu' id="menubtn" onClick={toggleSidebar}></i>
             </div>
             <ul className={"navList"}>
+                <SideNavItem path="/app/dashboard/watch" linktext="Watch" icon={"bx bx-video"}/>
+                <SideNavItem path="/app/dashboard/tickets" linktext="Tickets" icon={"bx bxs-coupon"}/>
+                <SideNavItem path="/app/dashboard/donate" linktext="Donate" icon={"bx bx-money"}/>
+                <SideNavItem path="/app/dashboard/settings" linktext="Settings" icon={"bx bx-cog"}/>
+                <SideNavItem path="/app/dashboard/about" linktext="About" icon={"bx bx-user"}/>
+                <SideNavItem path="/app/dashboard/contact" linktext="Contact" icon={"bx bx-chat"}/>
+
                 {/* <li>
                     <NavLink>
                         <i className="bx bx-search"></i>
@@ -68,34 +73,6 @@ const SideNav = () => {
                     </NavLink>
                     <span className="tooltip">Search</span>
                 </li> */}
-                <li>
-                    <NavLink to={"/"}>
-                        <i className="bx bx-grid-alt"></i>
-                        <span className={"linksName"}>Dashboard</span>
-                    </NavLink>
-                    <span className="tooltip">Dashboard</span>
-                </li>
-                <li>
-                    <NavLink to={"/"}>
-                        <i className="bx bx-user"></i>
-                        <span className={"linksName"}>User</span>
-                    </NavLink>
-                    <span className="tooltip">User</span>
-                </li>
-                <li>
-                    <NavLink to={"/"}>
-                        <i className="bx bx-chat"></i>
-                        <span className={"linksName"}>Messages</span>
-                    </NavLink>
-                    <span className="tooltip">Messages</span>
-                </li>
-                <li>
-                    <NavLink to={"/"}>
-                        <i className="bx bx-pie-chart-alt-2"></i>
-                        <span className={"linksName"}>Analytics</span>
-                    </NavLink>
-                    <span className="tooltip">Analytics</span>
-                </li>
             </ul>
             <div className={"profileContent"}>
                 <div className={"profile"}>
