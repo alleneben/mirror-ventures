@@ -39,7 +39,7 @@ const DashboardLayout = (props) => {
                 </div>
             </nav> */}
             {/* <TopNav /> */}
-            <main className={styles.main}>
+            <main className={"main"}>
                 <DashboardRoutes />
             </main>
         </div>

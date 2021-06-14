@@ -214,6 +214,35 @@ ul li .bx-search:hover{
   background: #fff;
   color: #1d1b31;
 }
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 90px);
+  left: 90px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .main {
+  width: calc(100% - 240px);
+  left: 250px;
+}
+
+.main-mobile {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+
+
+
+
+
+
+
+
 ::-webkit-scrollbar {
   width: 2px;
 }

@@ -19,6 +19,11 @@ const SideNav = () => {
 
         let sidebar = document.querySelector(".sidebar")
         sidebar.classList.toggle('active')
+
+        // let main = document.querySelector(".main-mobile")
+        // main.classList.remove('main-mobile')
+
+        // main.classList.add('main')
     }
     return(
         // <>
@@ -57,13 +62,13 @@ const SideNav = () => {
                 <i className='bx bx-menu' id="menubtn" onClick={toggleSidebar}></i>
             </div>
             <ul className={"navList"}>
-                <li>
-                    {/* <NavLink> */}
+                {/* <li>
+                    <NavLink>
                         <i className="bx bx-search"></i>
                         <input type="text" placeholder="Search"/>
-                    {/* </NavLink> */}
+                    </NavLink>
                     <span className="tooltip">Search</span>
-                </li>
+                </li> */}
                 <li>
                     <NavLink to={"/"}>
                         <i className="bx bx-grid-alt"></i>
