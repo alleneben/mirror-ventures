@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-// import { ReactComponent as Logo } from '../../asset/img/logo.svg';
+import { ReactComponent as Logo } from '../../asset/img/logo.svg';
 // import SideNavItem from './sidenavitem';
 // import styles from './sidenav.module.scss';
 
@@ -56,8 +56,7 @@ const SideNav = () => {
         <div className="sidebar">
             <div className="logoContent">
                 <div className={"logo"}>
-                    <i className='bx bxl-c-plus-plus'></i>
-                    <div className={"logoName"}>CodingLab</div>
+                    <Logo />
                 </div>
                 <i className='bx bx-menu' id="menubtn" onClick={toggleSidebar}></i>
             </div>

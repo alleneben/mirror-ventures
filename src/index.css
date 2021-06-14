@@ -50,28 +50,31 @@ body {
   font-size: 20px;
   margin-right: 5px;
 }
-.logoContent .logo .logoName {
+.logoContent .logo {
   font-size: 20px;
   font-weight: 400;
 }
+.logo svg {
+  width: 70%;
+}
 .sidebar #menubtn {
-     position: absolute;
-     color: #fff;
-     left: 90%;
-    top: 6px;
-     left: 50%;
-    font-size: 20px;
-     height: 50px;
-     width: 50px;
-     text-align: center;
-     line-height: 50px;
-     transform: translateX(-50%);
- }
+  position: absolute;
+  color: #fff;
+  left: 90%;
+  top: 6px;
+  left: 50%;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
  .sidebar.active #menubtn {
      left: 90%;
  }
 .sidebar ul {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .sidebar ul li{
   position: relative;
