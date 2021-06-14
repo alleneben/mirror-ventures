@@ -228,12 +228,6 @@ ul li .bx-search:hover{
   left: 250px;
 }
 
-.main-mobile {
-  position: absolute;
-  height: 100%;
-  width: calc(100% - 80px);
-  left: 80px;
-}
 
 
 
