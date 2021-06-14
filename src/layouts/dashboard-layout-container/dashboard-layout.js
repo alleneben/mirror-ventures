@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import DashboardRoutes from '../../routes/dashboard-routes';
-import { faUser, faBell, faSearch} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faUser, faBell, faSearch} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 import { SideNav } from '../../components';
@@ -14,8 +14,8 @@ const DashboardLayout = (props) => {
     return(
         <div className={styles.container}>
             <SideNav />
-            <nav className={styles.nav}>
-                <h1>{'Welcome Jones'}</h1>
+            {/* <nav className={styles.nav}> */}
+                {/* <h1>{'Welcome Jones'}</h1>
                 <div className={styles.right}>
                     <FontAwesomeIcon style={{ fontSize: "1rem", color: "#cbd5e0", marginRight: "1rem"}} icon={faSearch}/>
                     <FontAwesomeIcon style={{ fontSize: "1rem", color: "#cbd5e0", marginRight: "1rem"}} icon={faBell}/>
@@ -24,7 +24,7 @@ const DashboardLayout = (props) => {
                     <div className={styles.dropdown}>
                         <button className={styles.dropbtn}>
                             <FontAwesomeIcon style={{ fontSize: "1.5rem"}} icon={faUser} />{" "}
-                        </button>
+                        </button> */}
                         {/* <div className={styles.dropdowncontent}>
                             <Link to='/'>
                                 <FontAwesomeIcon style={{ fontSize: "1.5rem"}} icon={faUserCog} />{" "}
@@ -35,9 +35,9 @@ const DashboardLayout = (props) => {
                                 Logout
                             </Link>
                         </div> */}
-                    </div>
+                    {/* </div>
                 </div>
-            </nav>
+            </nav> */}
             {/* <TopNav /> */}
             <main className={styles.main}>
                 <DashboardRoutes />

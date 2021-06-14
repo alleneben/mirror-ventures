@@ -1,11 +1,9 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faEnvelope,faQrcode, faBars, faTimes,faCog } from "@fortawesome/free-solid-svg-icons";
 
-import { ReactComponent as Logo } from '../../asset/img/logo.svg';
-import SideNavItem from './sidenavitem';
-import styles from './sidenav.module.scss';
+// import { ReactComponent as Logo } from '../../asset/img/logo.svg';
+// import SideNavItem from './sidenavitem';
+// import styles from './sidenav.module.scss';
 
 
 
@@ -13,7 +11,15 @@ import styles from './sidenav.module.scss';
 
 const SideNav = () => {
 
+   
 
+    const toggleSidebar = () => {
+        let btn = document.querySelector("#menubtn")
+        btn.classList.toggle('active')
+
+        let sidebar = document.querySelector(".sidebar")
+        sidebar.classList.toggle('active')
+    }
     return(
         // <>
         // <input type="checkbox" id={styles.check}/>
@@ -42,15 +48,15 @@ const SideNav = () => {
         // </div>
         // </>
         <>
-        <div id="cock" className={styles.sidebar}>
-            <div className={styles.logoContent}>
-                <div className={styles.logo}>
+        <div className="sidebar">
+            <div className="logoContent">
+                <div className={"logo"}>
                     <i className='bx bxl-c-plus-plus'></i>
-                    <div className={styles.logoName}>CodingLab</div>
+                    <div className={"logoName"}>CodingLab</div>
                 </div>
-                <i className='bx bx-menu' id={styles.menubtn}></i>
+                <i className='bx bx-menu' id="menubtn" onClick={toggleSidebar}></i>
             </div>
-            <ul className={styles.navList}>
+            <ul className={"navList"}>
                 <li>
                     {/* <NavLink> */}
                         <i className="bx bx-search"></i>
@@ -61,42 +67,42 @@ const SideNav = () => {
                 <li>
                     <NavLink to={"/"}>
                         <i className="bx bx-grid-alt"></i>
-                        <span className={styles.linksName}>Dashboard</span>
+                        <span className={"linksName"}>Dashboard</span>
                     </NavLink>
                     <span className="tooltip">Dashboard</span>
                 </li>
                 <li>
                     <NavLink to={"/"}>
                         <i className="bx bx-user"></i>
-                        <span className={styles.linksName}>User</span>
+                        <span className={"linksName"}>User</span>
                     </NavLink>
                     <span className="tooltip">User</span>
                 </li>
                 <li>
                     <NavLink to={"/"}>
                         <i className="bx bx-chat"></i>
-                        <span className={styles.linksName}>Messages</span>
+                        <span className={"linksName"}>Messages</span>
                     </NavLink>
                     <span className="tooltip">Messages</span>
                 </li>
                 <li>
                     <NavLink to={"/"}>
                         <i className="bx bx-pie-chart-alt-2"></i>
-                        <span className={styles.linksName}>Analytics</span>
+                        <span className={"linksName"}>Analytics</span>
                     </NavLink>
                     <span className="tooltip">Analytics</span>
                 </li>
             </ul>
-            <div className={styles.profileContent}>
-                <div className={styles.profile}>
-                    <div className={styles.profileDetails}>
+            <div className={"profileContent"}>
+                <div className={"profile"}>
+                    <div className={"profileDetails"}>
                         {/* <img src="pic.jpg" alt="profile pic"/> */}
-                        <div className={styles.nameJob}>
-                            <div className={styles.name}>Allen Tette</div>
-                            <div className={styles.job}>Web Developer</div>
+                        <div className={"nameJob"}>
+                            <div className={"name"}>Allen Tette</div>
+                            <div className={"job"}>Web Developer</div>
                         </div>
                     </div>
-                    <i className="bx bx-log-out" id={styles.logOut}></i>
+                    <i className="bx bx-log-out" id={"logOut"}></i>
                 </div>
             </div>
         </div>

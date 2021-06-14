@@ -118,10 +118,13 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 78px;
     background: #11101d;
     padding: 6px 14px;
-
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
 }
 
 .sidebar .logoContent .logo {
@@ -130,6 +133,12 @@
     height: 50px;
     width: 100%;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .logoContent .logo {
+    opacity: 1;
+    pointer-events: none;
 }
 
 .logoContent i {
@@ -140,18 +149,22 @@
     font-size: 20px;
     font-weight: 400;
 }
-.sidebar #menubtn {
-    position: absolute;
-    color: #fff;
-    left: 90%;
-    top: 6px;
-    font-size: 20px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    transform: translateX(-50%);
-}
+// .sidebar #menubtn {
+//     position: absolute;
+//     color: #fff;
+//     left: 90%;
+//     top: 6px;
+//     left: 50%;
+//     font-size: 20px;
+//     height: 50px;
+//     width: 50px;
+//     text-align: center;
+//     line-height: 50px;
+//     transform: translateX(-50%);
+// }
+// .sidebar.active #menubtn {
+//     left: 90%;
+// }
 .sidebar ul {
     margin-top: 20px;
 }
@@ -191,12 +204,20 @@
     color: #11101d;
     background: #fff;
 }
-.sidebar ul li a i{
+.sidebar ul li i{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
+}
+.sidebar .linksName {
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .linksName {
+    opacity: 1;
+    pointer-events: none;
 }
 .sidebar .profileContent {
     position: absolute;

@@ -15,6 +15,173 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 78px;
+  background: #11101d;
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+}
+.sidebar.active{
+  width: 240px;
+}
+
+.sidebar .logoContent .logo {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar.active .logoContent .logo {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.logoContent i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.logoContent .logo .logoName {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sidebar #menubtn {
+     position: absolute;
+     color: #fff;
+     left: 90%;
+    top: 6px;
+     left: 50%;
+    font-size: 20px;
+     height: 50px;
+     width: 50px;
+     text-align: center;
+     line-height: 50px;
+     transform: translateX(-50%);
+ }
+ .sidebar.active #menubtn {
+     left: 90%;
+ }
+.sidebar ul {
+  margin-top: 20px;
+}
+.sidebar ul li{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+}
+
+.sidebar ul li input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: #1d1b31;
+  padding-left: 50px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar ul li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+.sidebar ul li a:hover{
+  color: #11101d;
+  background: #fff;
+}
+.sidebar ul li i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+.sidebar .linksName {
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar.active .linksName {
+  opacity: 1;
+  pointer-events: none;
+}
+.sidebar .profileContent {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.sidebar .profileContent .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background: #1d1b31;
+}
+.profileContent .profile .profileDetails {
+  display: flex;
+  align-items: center;
+}
+.profile .profileDetails img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.profile .profileDetails .nameJob{
+  margin-left: 10px;
+}
+.profile .profileDetails .name{
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile .profileDetails .job{
+  font-size: 12px;
+}
+.profile #logOut {
+  position: absolute;
+  left: 88%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  min-width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+/* #menubtn {
+  position: absolute;
+  color: #fff;
+  left: 90%;
+  top: 6px;
+  left: 50%;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+} */
+/* #menubtn {
+  left: 90%;
+} */
 ul li .tooltip{
   position: absolute;
   left: 122px;
@@ -36,12 +203,17 @@ ul li:hover .tooltip{
   opacity: 1;
   top: 50%;
 }
-/* ul li .bx-search{
+.sidebar ul li .bx-search{
   position: absolute;
   z-index: 99;
   color: #fff;
   font-size: 22px;
-} */
+  transition: all 0.5s ease;
+}
+ul li .bx-search:hover{
+  background: #fff;
+  color: #1d1b31;
+}
 ::-webkit-scrollbar {
   width: 2px;
 }
