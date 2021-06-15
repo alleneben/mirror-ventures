@@ -1,6 +1,16 @@
 .tickets {
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
-    padding-left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
 }
+
+
+
+@media (min-width: 769px) {
+    .tickets {
+        padding-top: 50px;
+    }
+}
+  
