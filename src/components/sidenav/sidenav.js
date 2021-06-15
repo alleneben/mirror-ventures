@@ -18,10 +18,12 @@ const SideNav = () => {
         let sidebar = document.querySelector(".sidebar")
         sidebar.classList.toggle('active')
 
-        // let main = document.querySelector(".main-mobile")
-        // main.classList.remove('main-mobile')
+        let btn_2 = document.querySelector("#menubtn_2")
 
-        // main.classList.add('main')
+        if(btn_2.classList.contains('active')){
+            btn_2.style.display = "block"
+            sidebar.style.display = "none"
+        }
     }
     return(
         // <>

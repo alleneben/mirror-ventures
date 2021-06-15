@@ -7,7 +7,7 @@ import { Tickets, Donate, Watch } from '../pages';
 const DashboardRoutes = (props) => {
 
   return (
-    <div className="inner-route">
+    // <div className="inner-route">
       <Switch>
         {/* All the routes and their component to render goes here as shown below */}
         {/* <Route exact path="/app/dashboard" component={Dashboard} {...props}/> */}
@@ -28,7 +28,7 @@ const DashboardRoutes = (props) => {
           }}
         />
       </Switch>
-    </div>
+    // </div>
   );
 };
 
