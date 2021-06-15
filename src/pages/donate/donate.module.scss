@@ -3,6 +3,7 @@
 
 .donate {
     display:  flex;
+    flex-direction: column;
 
     h5 {
         margin-bottom: 30px;
@@ -20,3 +21,18 @@
         padding-bottom: 30px;
     }
 }
+
+@media (min-width: 769px) {
+    .donate {
+        flex-direction: row;
+
+
+        #donation {
+            flex: 0.40;
+        }
+        #payment {
+            flex: 0.60;
+        }
+    }
+}
+  

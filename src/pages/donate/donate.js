@@ -28,7 +28,7 @@ const Donate = () => {
                     onChange={onChange}
                     required={true} 
                     styles={styles} 
-                    style={{width: "100%", marginBottom:'20px'}}
+                    style={{ marginBottom:'20px'}}
                     disabled={false}
                     />
                 </CardBody>
@@ -55,7 +55,7 @@ const Donate = () => {
                         onChange={onChange} 
                         required={true} 
                         styles={styles} 
-                        style={{width: "500px", marginBottom:'20px'}}
+                        style={{ marginBottom:'20px'}}
                         disabled={false}
                     />
                     <Field 
@@ -67,7 +67,7 @@ const Donate = () => {
                     onChange={onChange}
                     required={true} 
                     styles={styles} 
-                    style={{width: "500px", marginBottom:'20px'}}
+                    style={{ marginBottom:'20px'}}
                     disabled={false}
                     />
                     <div className={customStyles.bottom}>
@@ -80,7 +80,7 @@ const Donate = () => {
                         onChange={onChange}
                         required={true} 
                         styles={styles} 
-                        style={{width: "230px", marginRight: "20px"}}
+                        style={{ marginRight: "20px"}}
                         disabled={false}
                         />
                         <Field 
@@ -92,7 +92,7 @@ const Donate = () => {
                         onChange={onChange} 
                         required={true} 
                         styles={styles} 
-                        style={{width: "250px", marginBottom:'20px'}}
+                        style={{ marginBottom:'20px'}}
                         disabled={false}
                         />
                     </div>
