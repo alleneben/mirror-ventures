@@ -80,9 +80,10 @@ const Donate = () => {
                         onChange={onChange}
                         required={true} 
                         styles={styles} 
-                        style={{ marginRight: "20px"}}
+                        style={{ width:"200px",marginRight: "20px"}}
                         disabled={false}
                         />
+                        <br/>
                         <Field 
                         label={'CVC'} 
                         id={'cvc'} 

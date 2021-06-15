@@ -14,8 +14,16 @@
     #payment {
         flex: 0.70;
     }
+
     .bottom {
         display: flex;
+
+        #cvc {
+            flex: 0.9;
+        }
+        #expiry {
+            flex: 0.1;
+        }
     }
     .icons {
         padding-bottom: 30px;
