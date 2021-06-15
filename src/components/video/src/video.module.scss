@@ -1,11 +1,12 @@
 .video {
-    // position: absolute;
-    width: 1122px;
+
+    // width: 1122px;
     height: 476px;
     left: 283px;
     top: 183px;
 
     background: linear-gradient(0deg, rgba(3, 128, 214, 0.12), rgba(3, 128, 214, 0.12)), url(../../../asset/img/video.svg);
+    background-position: center;
     border-radius: 5px;
 
     display: flex;
@@ -25,17 +26,6 @@
         align-items: center;
         border-radius: 50%;
 
-        // .playicon {
-        //     // position: absolute;
-        //     width: 64px;
-        //     height: 64px;
-        //     // left: 876px;
-        //     // top: 393px;
-
-
-        //     background: #0380D6;
-        //     transform: rotate(90deg);
-        // }
         .playicon {
             width: 0;
             height: 0;

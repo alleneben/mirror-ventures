@@ -2,6 +2,8 @@
 .container {
     display: flex;
     flex-direction: column;
+    // width: 480px;
+    // padding: 30px 300px 0 0;
 }
 
 
@@ -87,3 +89,8 @@
 //         align-items: center;
 //     }
 // }
+@media (min-width: 769px) {
+    .container {
+        width: auto;
+    }
+}

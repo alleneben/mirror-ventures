@@ -22,7 +22,9 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  width: 78px;
+  /* width: 78px; */
+  width: 0;
+  display: none;
   background: #11101d;
   padding: 6px 14px;
   transition: all 0.5s ease;
@@ -45,17 +47,20 @@ body {
   opacity: 1;
   pointer-events: none;
 }
+.sidebar.active .profile #logOut {
+  left: 88%;
+}
 
-.logoContent i {
-  font-size: 20px;
-  margin-right: 5px;
+.sidebar ul li .bx-search{
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.5s ease;
 }
-.logoContent .logo {
-  font-size: 20px;
-  font-weight: 400;
-}
-.logo svg {
-  width: 70%;
+.sidebar ul li .bx-search:hover{
+  background: #fff;
+  color: #1d1b31;
 }
 .sidebar #menubtn {
   position: absolute;
@@ -168,6 +173,31 @@ body {
   height: 60px;
   background: #1d1b31;
 }
+.sidebar.active .profile .profileDetails {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar.active ~ .main {
+  width: calc(100% - 240px);
+  left: 250px;
+}
+
+
+
+
+.logoContent i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.logoContent .logo {
+  font-size: 20px;
+  font-weight: 400;
+}
+.logo svg {
+  width: 70%;
+}
+
 .profileContent .profile .profileDetails {
   display: flex;
   align-items: center;
@@ -175,10 +205,7 @@ body {
   pointer-events: none;
   white-space: nowrap;
 }
-.sidebar.active .profile .profileDetails {
-  opacity: 1;
-  pointer-events: auto;
-}
+
 .profile .profileDetails img{
   height: 45px;
   width: 45px;
@@ -206,43 +233,18 @@ body {
   border-radius: 12px;
   text-align: center;
 }
-.sidebar.active .profile #logOut {
-  left: 88%;
-}
-
-.sidebar ul li .bx-search{
-  position: absolute;
-  z-index: 99;
-  color: #fff;
-  font-size: 22px;
-  transition: all 0.5s ease;
-}
-.sidebar ul li .bx-search:hover{
-  background: #fff;
-  color: #1d1b31;
-}
 
 .main {
   position: absolute;
-  height: 100%;
+  height: auto;
   /* z-index: -1; */
-  width: calc(100% - 90px);
-  left: 90px;
+  width: 100% ;
+  /* left: 90px; */
   transition: all 0.5s ease;
+
+  padding: 0 20px;
+  margin-top: 50px;
 }
-
-.sidebar.active ~ .main {
-  width: calc(100% - 240px);
-  left: 250px;
-}
-
-
-
-
-
-
-
-
 
 
 ::-webkit-scrollbar {
@@ -259,4 +261,21 @@ body {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background: #6d6d6d;
+}
+
+
+
+
+@media (min-width: 769px) {
+  .sidebar {
+    display: block;
+  }
+  .main {
+    width: calc(100% - 90px);
+    left: 50px;
+  }
+}
+
+@media (min-width: 1399px) {
+  
 }
