@@ -5,7 +5,7 @@ import { faUser, faBell, faSearch} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-import { SideNav, TopNav } from '../../components';
+import { SideNav } from '../../components';
 import styles from './dashboard-layout.module.scss';
 
 
