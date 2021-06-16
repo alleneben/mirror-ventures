@@ -34,8 +34,8 @@ body {
   width: 50px;
   /* width: 0; */
   display: none;
-  background: #11101d;
-  padding: 6px 0;
+  background: #363740;
+  /* padding: 15px 10px; */
   transition: all 0.5s ease;
 }
 .sidebar.active{
@@ -47,6 +47,7 @@ body {
   display: flex;
   height: 50px;
   width: 100%;
+  margin: 20px 0 0 20px;
   align-items: center;
   opacity: 0;
   pointer-events: none;
@@ -69,7 +70,7 @@ body {
 }
 .sidebar ul li .bx-search:hover{
   background: #fff;
-  color: #1d1b31;
+  color: #363740;
 }
 .sidebar #menubtn {
   position: absolute;
@@ -93,7 +94,7 @@ body {
 .sidebar ul li{
   position: relative;
   height: 50%;
-  width: 100%;
+  /* width: 100%; */
   margin: 0 5px;
   list-style: none;
   line-height: 50px;
@@ -135,24 +136,25 @@ body {
   border-radius: 12px;
   outline: none;
   border: none;
-  background: #1d1b31;
+  background: #363740;
   padding-left: 50px;
   font-size: 18px;
   color: #fff;
 }
 
 .sidebar ul li a{
-  color: #fff;
+  color: #A4A6B3;
+  font-size: 14px;
   display: flex;
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   white-space: nowrap;
 }
 .sidebar ul li a:hover{
-  color: #11101d;
-  background: #fff;
+  color: #fff;
+  background: rgba(255,255,255,.1);
 }
 .sidebar ul li i{
   height: 50px;
@@ -263,7 +265,7 @@ body {
   position: absolute;
   line-height: 50px;
   background: #fff;
-  color: red;
+  color: #0380D6;
   font-weight: 800;
   font-size: 14px;
   top: 0;
@@ -302,7 +304,7 @@ body {
   min-width: 50px;
   border-radius: 12px;
   line-height: 50px;
-  color: #11101d;
+  color: #363740;
   font-size: 20px;
   font-weight: 700;
   /* text-align: center; */
