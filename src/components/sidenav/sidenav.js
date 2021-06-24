@@ -26,32 +26,6 @@ const SideNav = () => {
         }
     }
     return(
-        // <>
-        // <input type="checkbox" id={styles.check}/>
-        // <label htmlFor={styles.check}>
-        //     <FontAwesomeIcon
-        //         id={styles.btn}
-        //         style={{ fontSize: "1.1rem" }}
-        //         icon={faBars} />{" "}
-        //     <FontAwesomeIcon
-        //         id={styles.cancel}
-        //         style={{ fontSize: "1.1rem"}}
-        //         icon={faTimes} />{" "}
-        // </label>
-        // <div className={styles.sidenav}>
-        //     <header>
-        //         <Logo />
-        //     </header>
-        //     <ul>
-        //         <SideNavItem path="/app/dashboard/watch" linktext="Watch" icon={faEnvelope}/>
-        //         <SideNavItem path="/app/dashboard/tickets" linktext="Tickets" icon={faQrcode}/>
-        //         <SideNavItem path="/app/dashboard/donate" linktext="Donate" icon={faQrcode}/>
-        //         <SideNavItem path="/app/dashboard/settings" linktext="Settings" icon={faCog}/>
-        //         <SideNavItem path="/app/dashboard/about" linktext="About" icon={faQrcode}/>
-        //         <SideNavItem path="/app/dashboard/contact" linktext="Contact" icon={faQrcode}/>
-        //     </ul>
-        // </div>
-        // </>
         <>
         <div className="sidebar">
             <div className="logoContent">
@@ -67,14 +41,6 @@ const SideNav = () => {
                 <SideNavItem path="/app/dashboard/settings" linktext="Settings" icon={"bx bx-cog"}/>
                 <SideNavItem path="/app/dashboard/about" linktext="About" icon={"bx bx-user"}/>
                 <SideNavItem path="/app/dashboard/contact" linktext="Contact" icon={"bx bx-chat"}/>
-
-                {/* <li>
-                    <NavLink>
-                        <i className="bx bx-search"></i>
-                        <input type="text" placeholder="Search"/>
-                    </NavLink>
-                    <span className="tooltip">Search</span>
-                </li> */}
             </ul>
             <div className={"profileContent"}>
                 <div className={"profile"}>
